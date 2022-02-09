@@ -71,5 +71,5 @@ data_mean_std <- train_test[ , data_mean_std_True_False == TRUE]
 ## 4. merging the dataSet to name each rows by activity
 ds_mean_std <- merge(data_mean_std, activity_labels, by = "id_activity", all.x = TRUE)
 
-## 5.
+## 5. Creating the tidy dataSet
 tidy_data_set <- aggregate(. ~id_activity + name_activity, ds_mean_std, mean)
