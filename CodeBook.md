@@ -17,4 +17,4 @@ The following steps are performed in the code **run_analysis.R** :
     - Merging dataSets
 -  Extract only the measurements on the mean and standard deviation for each measurement
 -  Merging the dataSet to name each rows by activity
--  
+-  Creating the tidy dataSet
