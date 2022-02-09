@@ -73,3 +73,5 @@ ds_mean_std <- merge(data_mean_std, activity_labels, by = "id_activity", all.x =
 
 ## 5. Creating the tidy dataSet
 tidy_data_set <- aggregate(. ~id_activity + name_activity, ds_mean_std, mean)
+write.table(tidy_data_set, "tidy_data_set.txt", row.names = FALSE)
+tidy_data_set
